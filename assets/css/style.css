@@ -22,7 +22,13 @@ main {
 li {
   list-style: none;
   display: inline;
-  margin: 2em auto;
+  cursor: default;
+}
+hr {
+  visibility: hidden;
+}
+.riga {
+  margin-bottom: 1em;
 }
 /* ID */
 #container {

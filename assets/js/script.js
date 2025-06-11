@@ -4,6 +4,7 @@ form.addEventListener("submit", (e) => {
   const taskElement = document.getElementById("taskform");
   const task = taskElement.value;
   const taskrow = document.createElement("div");
+  taskrow.classList.add("riga");
   taskrow.innerHTML = `<li class="assignedtask">${task}</li> <button onclick="deleteTask(event)"><i class="fas fa-trash-alt"></i></button>`;
   const divlist = document.getElementById("taskbox");
   divlist.appendChild(taskrow);
