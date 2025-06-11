@@ -3,16 +3,20 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const taskElement = document.getElementById("taskform");
   const task = taskElement.value;
-  const taskrow = document.createElement("div");
-  taskrow.classList.add("riga");
-  taskrow.innerHTML = `<li class="assignedtask">${task}</li> <button onclick="deleteTask(event)"><i class="fas fa-trash-alt"></i></button>`;
+  const taskrow = document.createElement("li");
+  taskrow.className = "assignedtask";
+  taskrow.textContent = task;
+  const button = document.createElement("button");
+  button.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+  button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    taskrow.remove();
+  });
+  taskrow.appendChild(button);
   const divlist = document.getElementById("taskbox");
   divlist.appendChild(taskrow);
   form.reset();
 });
-const deleteTask = (e) => {
-  e.target.parentElement.remove();
-};
 
 const textlist = document.querySelector("ul");
 textlist.addEventListener(

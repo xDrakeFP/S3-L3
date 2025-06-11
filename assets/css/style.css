@@ -21,14 +21,17 @@ main {
 }
 li {
   list-style: none;
-  display: inline;
   cursor: default;
+  margin-bottom: 1em;
 }
 hr {
   visibility: hidden;
 }
 .riga {
   margin-bottom: 1em;
+}
+i {
+  display: inline;
 }
 /* ID */
 #container {
