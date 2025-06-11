@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>To Do List</h1>
+        <h2>Add your task to be completed</h2>
+      </header>
+      <main>
+        <form id="todolist">
+          <label for="taskform">Enter your task</label>
+          <input type="text" id="taskform" required />
+          <button><i class="fas fa-plus"></i></button>
+        </form>
+        <div><ul id="taskbox"></ul></div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

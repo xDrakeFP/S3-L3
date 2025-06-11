@@ -1,0 +1,36 @@
+/* ELEMENTI */
+body {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 5em;
+}
+h2 {
+  font-family: "Indie Flower", cursive;
+  font-size: 3em;
+}
+header {
+  margin-bottom: 1.5em;
+}
+main {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.4em;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin: 2em auto;
+}
+/* ID */
+#container {
+  background-image: url(../img/white-paper-texture-background.jpg);
+  background-size: cover;
+  height: 100em;
+}
+/* CLASSI */
+.barrato {
+  text-decoration: line-through;
+}
